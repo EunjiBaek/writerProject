@@ -1,0 +1,112 @@
+.slick-slide {
+    background-color: rgba(0, 0, 0, 0.97);
+}
+.SlideList {
+    display: flex !important;
+    align-items: flex-start;
+    justify-content: center;
+    overflow: hidden;
+}
+.SlideList > img {
+    width: auto !important;
+    max-height: 100%;
+}
+
+
+.News h1,
+.WriterSection h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    color: #000000;
+    font-weight: 800;
+    text-align: center;
+
+}
+
+.Slide-banner {
+    position: absolute;
+    height: 100%;
+    top: 0; left: auto;
+    width: 1340px;
+}
+
+
+
+.carousel-row > div {
+    width: 100%;
+    height: 500px;
+    display: flex !important;
+    align-items: flex-start;
+    background-color: #ffffff;
+}
+
+
+.NewsSlide > .carousel-dots {
+    position: absolute;
+    width: auto;
+    left: 72%;
+    bottom: 15px;
+    z-index: 10;
+    margin: 0;
+    font-size: 0;
+}
+
+.NewsSlide > .carousel-dots > li {
+    width: 10px; height: 10px;
+    border-radius: 10px;
+    margin: 0 3px;
+    border: 1px solid #cccccc;
+}
+.NewsSlide > .carousel-dots > li.carousel-dots-active {
+    background-color: #cccccc;
+}
+.NewsSlide > .carousel-dots li button:before {
+    display: none !important;
+}
+.NewsSlide > div > .carousel-arrow {
+    display: none !important;
+}
+
+
+/*작가 섹션*/
+.writer-el {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.writer-el:hover {
+    filter: drop-shadow(4px 7px 14px rgba(0, 0, 0, 0.2));
+}
+.writer-el:hover img {
+    filter: grayscale(0%)
+}
+.writer-el:hover p {
+    display: none;
+}
+.writer-el > div {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%; height: 95%;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #efefef;
+    z-index: 10;
+    overflow: hidden;
+}
+.writer-el::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+}
+
+
+
+/*미디어쿼리*/
+@media (max-width: 1360px) {
+    .Slide-banner {
+        width: 100%;
+    }
+}
